@@ -1,0 +1,10 @@
+issue#1
+在github建立repository之后（例如publictesting）之后，按照coursera中R studio 的tutorial进行操作new project/version control/填写publictesting的url之后无法建立连接，一直弹出错误为
+error: cannot run rpostback-askpass: No such file or directory
+fatal： 忘记
+后进行电脑重启后解决这个问题，但出现issue#2
+
+issue#2
+在r studio中进行修改后，可以stage-commit message-commit但是不能push，查询后在stack overflow中查到troubleshooting方法见下，成功，中心思想为switch the repository URL from https to ssh, 问题是每一个project是否都需要这样操作？
+https://stackoverflow.com/questions/57260314/git-not-letting-me-add-my-github-password-when-asking-for-credentials
+https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
